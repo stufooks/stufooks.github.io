@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 8vh 92vh 150vh 8vh;
+    grid-template-rows: 12vh 92vh 150vh 10vh;
     grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
@@ -12,16 +12,20 @@ header {
     color:  white;
     background-image: url("../images/big-water.jpg");
     background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 ul {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     list-style: none;
 }
 
 li {
-    margin: 0 6% 0 0;
+    margin: 0 10vh 0 0;
 }
 
 a {
@@ -44,14 +48,6 @@ a {
     grid-template-columns: 1fr;
 }
 
-h1 {
-    grid-row: 1;
-    grid-column: 1;
-    color: #000033;
-    text-align: center;
-    font-size: 10vh;
-}
-
 .circle {
     grid-row: 1;
     grid-column: 1;
@@ -63,6 +59,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    grid-row: 1;
+    grid-column: 1;
+    color: #000033;
+    text-align: center;
+    font-size: 10vh;
 }
 
 .projects {
