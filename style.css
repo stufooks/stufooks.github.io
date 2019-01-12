@@ -5,13 +5,9 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-section {
-    width: 50vw;
-}
-
 .headline {
     height: 100vh;
-    width: 100%;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,14 +15,15 @@ section {
 }
 
 .name {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    margin: 0 0 0 -200px;
+    margin: 0;
     font-size: 100px;
     letter-spacing: 5px;
     font-weight: bold;
@@ -49,8 +46,9 @@ h1 {
     -ms-overflow-style: none;
 }
 
-.about, .projects {
-    width: 80%;
+.about, .project {
+    width: 70%;
+    margin-left: 15%;
 }
 
 h2 {
@@ -68,8 +66,7 @@ a:hover {
 
 img {
     height: 20vh;
-    border: 1px solid grey;
-    padding: 2px;
+    margin: 10px 0;
 }
 
 .space-top {
