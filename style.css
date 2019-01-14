@@ -23,13 +23,15 @@ body {
 }
 
 .name {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
 h1 {
-    margin: -20px 0 0 0;
+    margin: 0;
     color: white;
     font-size: 125px;
     font-weight: 100;
@@ -107,12 +109,7 @@ nav h3 {
 
 .icons-container {
     margin-bottom: 30vh;
-    opacity: 0;
     transition: .6s;
-}
-
-.display-icons {
-    opacity: 1;
 }
 
 .icon {
@@ -153,10 +150,7 @@ nav h3 {
 
 .projects-container, .about-container {
     width: 80%;
-}
-
-.about-container {
-    margin-bottom: 100px;
+    margin-top: 30vh;
 }
 
 ul {
