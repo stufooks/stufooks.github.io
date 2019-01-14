@@ -9,28 +9,59 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
-    <section class="headline">
-        <div class="name">
-            <a><h1>Stuart</h1></a>
-            <a><h1>Fooks</h1></a>
-        </div>
+    <section class="left">
+        <a href="#contact"><div class="name">
+            <h1>STUART</h1>
+            <h1>FOOKS</h1>
+        </div></a>
     </section>
-    <section class="projects">
+    <section class="right">
+        <nav>
+            <div class="links-container">
+                <a href="#about"><h3>ABOUT</h3></a>
+                <a href="#projects"><h3>PROJECTS</h3></a>
+                <a href="#contact" class="contact-link"><h3>CONTACT</h3></a>
+            </div>
+            <div class="hamburger-container">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
         <div class="scrollable">
             <div class="space-top">
+                <div class="icons-container" id="contact">
+                    <a href="https://www.linkedin.com/in/stuart-fooks-924219107/"><img src="images/linkedin-icon.png" class="icon"></a>
+                    <a href="https://github.com/stufooks"><img src="images/github-icon.png" class="icon"></a>
+                    <a href="https://medium.com/@sb.fooks"><img src="images/medium-icon.png" class="icon"></a>
+                </div>
+                <a href="#about"><div class="arrows-container">
+                    <img src="images/down-arrow1.png" class="arrow">
+                    <img src="images/down-arrow1.png" class="arrow">
+                    <img src="images/down-arrow1.png" class="arrow">
+                </div></a>
             </div>
-            <div class="about">
-                <h2>Hello! I'm Stuart, a solutions-driven Web Developer based in Washington, DC. I'm excited to show you some of my work. </h2>
-            </div>
-            <div class="project">
-                <a href="/Simon"><h3>Simon</h3></a>
-                <p>Web app based on the children's game, Simon. Built using Pug, Sass, JavaScript, and Parcel. Give it a try!</p>
-                <p><a href="https://github.com/stufooks/Simon">GitHub Repository</a></p>
-                <img src="images/simon-screenshot.png">
+            <div class="content-container">
+                <div class="about-container">
+                    <h2 id="about">About</h2>
+                    <h4>Hello! I'm Stuart, a solutions-driven Web Developer based in Washington, DC. I started a coding bootcamp in December of 2018 to pursue my passion for code. These are some of my projects that I've created since then.</h4>
+                </div>
+                <div class="projects-container">
+                    <h2 id="projects">Projects</h2>
+                    <div class="project">
+                        <ul>
+                            <li><a href="/Simon"><h4>Simon</h4></a></li>
+                            <li><p>Web app based on the children's game, Simon. Built using Pug, Sass, JavaScript, and Parcel. Give it a try!</p></li>
+                            <li><p><a href="https://github.com/stufooks/Simon">GitHub Repository</a></p></li>
+                            <li><img src="images/simon-screenshot.png"></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="space-bottom">
             </div>
         </div>
     </section>
+    <script src="main.js"></script>
 </body>
 </html>

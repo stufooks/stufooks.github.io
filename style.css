@@ -3,37 +3,7 @@ body {
     display: flex;
     justify-content: flex-start;
     font-family: 'Montserrat', sans-serif;
-}
-
-.headline {
-    height: 100vh;
-    width: 60vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.name {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.name:hover {
-    color: grey !important;
-}
-
-h1 {
-    margin: -10px;
-    font-size: 100px;
-    font-weight: 100;
-}
-
-.projects {
-    display: flex;
+    color: #a49b96;
     overflow: hidden;
     height: 100vh;
     width: 100%;
@@ -41,43 +11,157 @@ h1 {
     will-change: overflow;
 }
 
+.left {
+    width: 50vw;
+    height: 100vh;
+    background-image: url("images/blue-waves.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1 {
+    margin: -20px 0 0 0;
+    color: white;
+    font-size: 125px;
+    font-weight: 100;
+}
+
+.right {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav h3 {
+    margin: 0 7px;
+}
+
+.links-container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:0 -350px 0 0;
+    -moz-transition:all .4s ease-in;
+    -webkit-transition:all .4s ease-in;
+    -o-transition:all .4s ease-in;
+    transition:all .4s ease-in;
+}
+
+.display-nav {
+    margin: 0 25px 0 0;
+}
+
+.hamburger-container {
+    background-color: white;
+}
+
+.bar {
+    width: 35px;
+    height: 2px;
+    background-color: #a49b96;
+    margin: 3px 17px;
+    transition: 0.4s;
+}
+
+.change1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.change2 {
+    opacity: 0;
+}
+
+.change3 {
+    -webkit-transform: rotate(45deg) translate(-3px, -3px);
+    transform: rotate(45deg) translate(-3px, -3px);
+}
+
+.space-top {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icons-container {
+    margin-bottom: 30vh;
+    opacity: 0;
+    transition: .6s;
+}
+
+.display-icons {
+    opacity: 1;
+}
+
+.icon {
+    width: 80px;
+    height: auto;
+    margin: 2vw;
+}
+
+.arrows-container {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.arrow {
+    width: 30px;
+    height: auto;
+    margin: -8px 0;
+}
+
 .scrollable {
     overflow: auto;
     height: auto;
-    padding: .5rem;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
+    scroll-behavior: smooth;
 }
 
-.about, .project {
-    width: 70%;
-    margin-left: 15%;
+.content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-/* .project {
-    background-color: rgba(235,235,235,.5);
-} */
-
-h2 {
-    font-weight: 400;
-    margin-bottom: 70px;
+.projects-container, .about-container {
+    width: 80%;
 }
 
-h3 {
-    font-weight: 700;
+.about-container {
+    margin-bottom: 100px;
 }
 
-p {
-    font-weight: 200;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    text-decoration: underline;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 img {
@@ -85,10 +169,15 @@ img {
     margin: 10px 0;
 }
 
-.space-top {
-    height: 100vh;
+a {
+    text-decoration: none;
+    color: #a49b96;
 }
 
 .space-bottom {
-    height: 20vh;
+    height: 100vh;
+}
+
+a:hover *, a:hover {
+    color: #645e5b;
 }
