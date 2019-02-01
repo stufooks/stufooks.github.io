@@ -150,7 +150,12 @@ nav h3 {
 
 .projects-container, .about-container {
     width: 80%;
-    margin-top: 30vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+.project {
+    margin-bottom: 10vh;
 }
 
 ul {
@@ -169,7 +174,7 @@ a {
 }
 
 .space-bottom {
-    height: 100vh;
+    height: 8vh;
 }
 
 a:hover *, a:hover {
