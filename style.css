@@ -156,6 +156,8 @@ nav h3 {
 
 .project {
     margin-bottom: 10vh;
+    border: 2px solid #a49b96;
+    padding: 0 5%;
 }
 
 ul {
