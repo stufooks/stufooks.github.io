@@ -31,11 +31,7 @@
     background-color: white;
   }
 
-  .contact {
-    display: flex;
-  }
-
-  .logos {
+  .email-logo {
     display: none;
   }
 
@@ -44,7 +40,7 @@
   }
 
   .about-info {
-    width: 90vw;
+    width: 100vw;
     margin-left: 0;
   }
 
@@ -57,5 +53,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .project-info {
+    margin-left: 0;
   }
 }
