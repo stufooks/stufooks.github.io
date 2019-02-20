@@ -1,0 +1,40 @@
+@media only screen and (max-width: 600px) {
+  .landing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .landing * {
+    width: 100vw;
+  }
+
+  .landing-image {
+    order: 1;
+  }
+
+  .name {
+    order: 2;
+    margin-top: -300px;
+  }
+
+  .name * {
+    color: white;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .nav {
+    margin-top: 275px;
+    order: 3;
+    background-color: white;
+  }
+
+  .contact {
+    display: flex;
+  }
+
+  .logos {
+    display: none;
+  }
+}
