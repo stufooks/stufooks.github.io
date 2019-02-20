@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    height: 100vh;
   }
 
   .landing * {
@@ -25,7 +26,7 @@
   }
 
   .nav {
-    margin-top: 275px;
+    margin-top: 220px;
     order: 3;
     background-color: white;
   }
@@ -36,5 +37,19 @@
 
   .logos {
     display: none;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about * {
+    width: 100vw;
+  }
+
+  .project-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
