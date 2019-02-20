@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Stuart Fooks</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-</head>
-<body>
-    <section class="left">
-        <a href="#about"><div class="name">
-            <h1>STUART</h1>
-            <h1>FOOKS</h1>
-        </div></a>
-    </section>
-    <section class="right">
-        <nav>
-            <div class="links-container">
-                <a href="#about"><h3>ABOUT</h3></a>
-                <a href="#projects"><h3>PROJECTS</h3></a>
-                <a href="#contact" class="contact-link"><h3>CONTACT</h3></a>
-            </div>
-            <div class="hamburger-container">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-        <div class="scrollable">
-            <div class="space-top">
-                <div class="icons-container" id="contact">
-                    <a href="https://www.linkedin.com/in/stuart-fooks-924219107/"><img src="images/linkedin-icon.png" class="icon"></a>
-                    <a href="https://github.com/stufooks"><img src="images/github-icon.png" class="icon"></a>
-                    <a href="https://medium.com/@sb.fooks"><img src="images/medium-icon.png" class="icon"></a>
-                </div>
-                <a href="#about"><div class="arrows-container">
-                    <img src="images/down-arrow1.png" class="arrow">
-                    <img src="images/down-arrow1.png" class="arrow">
-                    <img src="images/down-arrow1.png" class="arrow">
-                </div></a>
-            </div>
-            <div class="content-container">
-                <div class="about-container">
-                    <h2 id="about">About</h2>
-                    <h4>Hello! I'm Stuart, a solutions-driven Web Developer based in Washington, DC. I started a coding bootcamp in December of 2018 to pursue my passion for code. I love solving complex problems, and I can't wait to contribute to a team. </br> Below are some of the projects.</h4>
-                </div>
-                <a href="#projects"><div class="arrows-container">
-                    <img src="images/down-arrow1.png" class="arrow">
-                    <img src="images/down-arrow1.png" class="arrow">
-                    <img src="images/down-arrow1.png" class="arrow">
-                </div></a>
-                <div class="projects-container">
-                    <h2 id="projects">Projects</h2>
-                    <div class="project" id="projects">
-                        <ul>
-                            <li><a href="https://fruit-fight.herokuapp.com/"><h4>Fruit Fight</h4></a></li>
-                            <li><p>Web app that allows a user to choose between two fruits, saves their response, and then repeats. It also generates a leaderboard based on all of the user responses. Now we can finally answer: what is the best fruit?!</p></li>
-                            <li><p><a href="https://github.com/stufooks/fruit-fight">GitHub Repository</a></p></li>
-                            <li><img src="images/fruit-fight-screenshot.png"></li>
-                        </ul>
-                    </div>
-                    <div class="project">
-                        <ul>
-                            <li><a href="/Simon"><h4>Simon</h4></a></li>
-                            <li><p>Web game based on the children's game, Simon. Built using Pug, Sass, JavaScript, and Parcel. Give it a try!</p></li>
-                            <li><p><a href="https://github.com/stufooks/Simon">GitHub Repository</a></p></li>
-                            <li><img src="images/simon-screenshot.png"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="space-bottom">
-            </div>
+  </head>
+  <body>
+    <section class="landing" id="landing">
+      <div class="name">
+        <a class="name-text">STUART FOOKS</a>
+      </div>
+      <div class="landing-image">
+        <img src="./images/big-bend-rio.jpg" alt="Big Bend National Park river" />
+      </div>
+      <div class="nav">
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <!-- <a>CONTACT</a> -->
+        <div class="logos">
+          <a href="#" class="email-logo"><img src="./images/gmail-logo.png"></a>
+          <a href="https://www.linkedin.com/in/stuart-fooks-924219107/"><img src="./images/linked-in-logo.png"></a>
+          <a href="https://www.github.com/stufooks"><img src="./images/github-logo.png"></a>
+          <p class="email">sb.fooks@gmail.com</p>
         </div>
+      </div>
     </section>
+    <section class="about" id="about">
+      <div class="about-info">
+        <p class="about-title">ABOUT</p>
+        <p class="about-paragraph">
+          I'm a solutions-driven software developer based in Washington, DC. I
+          love using the power of programming to solve real-world problems. I'm
+          currently enrolled in General Assembly's Software Engineering
+          Immersive program and seeking to join an engineering team full time. </br> </br>
+          Check out some of my <span><a href="#projects">projects</a></span>.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="images/big-bend-cliffs.jpg" alt="Big Bend National Park cliffs"/>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="project-card">
+        <div class="project-image">
+          <a href="https://fruit-fight.herokuapp.com"
+            ><img src="./images/fruit-fight-screenshot.png" alt="Fruit Fight"
+          /></a>
+        </div>
+        <div class="project-info">
+          <a href="http://fruit-fight.herokuapp.com/">FRUIT FIGHT</a>
+          <p>Stack: Handlebars, Express.js, Node.js, Mongoose, MongoDB</p>
+          <div class="project-logos">
+            <a href="https://github.com/stufooks/fruit-fight"
+              ><img class="logo" src="./images/github-logo.png" alt="GitHub logo"
+            /></a>
+            <a><img class="logo" src="./images/medium-logo.png" alt="Medium logo"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">
+          <a href="https://stufooks.github.io/Simon"
+            ><img src="./images/simon-screenshot.png" alt="Simon"
+          /></a>
+        </div>
+        <div class="project-info">
+          <a href="http://stufooks.github.io/Simon">SIMON</a>
+          <p>Stack: JavaScript, Pug, Sass, Parcel</p>
+          <div class="project-logos">
+            <a href="https://github.com/stufooks/Simon"
+              ><img class="logo" src="./images/github-logo.png" alt="GitHub logo"
+            /></a>
+            <a href="https://medium.com/@sb.fooks/building-simon-2def8048d9d8"
+              ><img class="logo" src="./images/medium-logo.png" alt ="Medium logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <a href="#landing" class="footer-nav">
+        <p>back to top</p>
+        <img src="images/up-scroll-arrow.png" alt="up arrow">
+      </a>
+    </footer>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
