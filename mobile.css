@@ -43,8 +43,14 @@
     flex-direction: column;
   }
 
-  .about * {
+  .about-info {
+    width: 90vw;
+    margin-left: 0;
+  }
+
+  .about-image {
     width: 100vw;
+    margin-left: 0;
   }
 
   .project-card {
