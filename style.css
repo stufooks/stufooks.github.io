@@ -74,6 +74,7 @@ a {
   transition: all 400ms ease-in-out;
   z-index: -1;
   position: relative;
+  /* color: white; */
 }
 
 .email-open {
