@@ -159,14 +159,18 @@ span {
   font-weight: bold;
 }
 
+.project-title {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 7%;
+  /* margin-left: 10%; */
+}
+
 #recs * {
   width: 115px;
   margin-left: 20px;
 }
-
-/* #recs-2 {
-  margin-left: 50px;
-} */
 
 footer {
   width: 100vw;
